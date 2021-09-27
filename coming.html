@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="keywords" content="dr-ait,dr ait,dr-ait results, results dr-ait,DR-AIT results sgpa cgpa">
+<meta name="description" content="Calculate your sgpa and cgpa">
+
+<script src="ajax/angular.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="css/body.css">
+<script src="js/cgpa4.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+<link href="css/animate.min.css" rel="stylesheet">
+<title>DR-AIT CGPA Calculator</title>
+
+</head>
+
+<body style="width:100%;">
+
+<div class="content overlay-content text-center">
+<br><div class="row">
+	<div class="col-lg-12 wow fadeIn" >
+    <img class="row-3 img-fluid wow fadeIn" data-wow-duration="3s" data-wow-delay=".3s"style="max-width:100%; height:auto;" src="images/logo-wide.png"/>
+    <hr class="space s" />
+	<div class=" wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">
+    <h3 class="font-2 text-m" style="font-size:20px; color:gray; font-family:verdana"> Near Jnana Bharathi Campus, Off BDA Outer Ring Road, Mallathahalli, Bengaluru, Karnataka 560 056</h3>
+    <h4 class="font-2 text-m text-medium" style="font-size:15px; color:#00ced1; font-family:verdana">080-23211232, 23215070  |  principal@dr-ait.org  | www.drait.edu.in  </h4>
+</div> 
+</div>
+<hr>
+<div ng-app="CalculatorApp" ng-controller="CalculatorController" style="display: block; width: 100%;">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.9s"> 
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<right>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div class="navbar-nav">
+<button class="btn btn-small " style="background-color:aqua"><a class="nav-item nav-link" href="index.html"><b>Home </b><span class="sr-only">(current)</span></a></button>
+<button class="btn btn-small" style="background-color:#02fb02"><a class="nav-item nav-link " href="http://results.drait.in/"><b>Results</b></a></button>
+<li class="nav-item dropdown">
+<button class="btn btn-small" style="background-color:yellow"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
+SGPA Calculator</b>
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" href="sem1.html">I Semester</a>
+<a class="dropdown-item " href="sem2.html">II Semester</a>
+<a class="dropdown-item " href="sem3.html">III Semester</a>
+<a class="dropdown-item" href="sem4.html">IV Semester</a>
+<a class="dropdown-item" href="sem5.html">V Semester</a>
+<a class="dropdown-item" href="coming.html">VI Semester</a>
+<a class="dropdown-item" href="coming.html">VII Semester</a>
+<a class="dropdown-item" href="coming.html">VIII Semester</a>
+</div>
+</li>
+</div>
+</div>
+</right>
+</nav>
+<div style="height:500px; ;">
+<div class="rolling" style="font-size:50px; padding-top:200px; color:green; font-family:cursive ">
+</div>
+</div>
+
+<center><footer class="footer wow flash" data-wow-duration="2s" data-wow-delay=".5s">Copyright © 2020 UNDEFINED UNIVERSE<a href="#"> </a></footer></center>
+
+<script src="jquery/jquery.min.js" type="text/javascript"></script>
+<script src="bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init(); 
+</script>
+<script src="ajax/rocket-loader.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+$(document).ready(function() {
+	$('html').bind('cut copy paste',function(e) {
+		e.preventDefault();
+	})
+	$('body').on("contextmenu",function(e) {
+		return false;
+		})
+	}); 
+</script>
+<script>
+/* To Disable Inspect Element */
+$(document).bind("contextmenu",function(e) {
+ e.preventDefault();
+});
+
+$(document).keydown(function(e){
+    if(e.which === 123){
+       return false;
+    }
+});
+</script>
+<script>
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'P'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+return false;
+}
+}
+</script>
+<script>
+new TypeIt(".rolling", {
+  strings: "COMING SOON....!..",
+  speed: 300,
+  loop: true
+
+}).go();
+</script>
+</body>
+</html>
